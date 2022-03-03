@@ -4,6 +4,8 @@ import "fmt";
 
 func main(){
 
-fmt.Println("Hello,World");
+	var bool  b   = true
+
+	fmt.Println(b);
 
 }
