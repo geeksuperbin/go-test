@@ -10,7 +10,9 @@ func main() {
 		Male = 2
 	)
 
-	
+	fmt.Println(Unknown)
+	fmt.Println(Female)
+	fmt.Println(Male)
 
 
 }
