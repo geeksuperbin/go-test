@@ -1,0 +1,40 @@
+package main
+
+import "fmt"
+
+
+
+func  getSequence() func() int {
+	i := 0
+	return func() int {
+		i += 1
+		return i
+	}
+}
+
+
+
+
+func main(){
+	nextNumber := getSequence()
+
+
+	fmt.Println(nextNumber())
+	fmt.Println(nextNumber())
+	fmt.Println(nextNumber())
+
+	nextNumber1 := getSequence()
+	fmt.Println(nextNumber1())
+	fmt.Println(nextNumber1())
+
+	/*
+		输出结果：
+				1
+				2
+				3
+				1
+				2
+
+	*/
+
+}
